@@ -4,12 +4,6 @@ __GUIFIEDGLOBAL__.rootfolder = "libs.guified"
 local elements = require("elements")
 
 function love.load()
-    love.window.setMode(800, 600, {
-        resizable = true,
-        minwidth = 800,
-        minheight = 600,
-        highdpi = true
-    })
     love.window.maximize()
 
     local cursor = elements.cursor()

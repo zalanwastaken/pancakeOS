@@ -1,6 +1,7 @@
 ---@class customElements
 local elements = {
     --! No need to register
+    --! Static element no update/draw loop
     cursor = function()
         local cursorIMG = love.image.newImageData("assets/cursor.png")
         local cursor = love.mouse.newCursor(cursorIMG, 0, 0)
@@ -17,7 +18,7 @@ local elements = {
         local windowWidth, windowHeight = love.graphics.getDimensions()
         local logoWidth, logoHeight = logo:getWidth(), logo:getHeight()
         local scale = 1.2
-        
+
         return({
             name = "Vendor logo",
             draw = function()
